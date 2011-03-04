@@ -1,0 +1,4 @@
+*.swp
+*.sass-cache
+*.swo
+.DS_Store

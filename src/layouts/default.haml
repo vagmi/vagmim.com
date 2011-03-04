@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %title Vagmi Mudumbai - Rails Developer, Entreprenuer, Tech Blogger
+    %link(href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css")
+    %link(href="http://fonts.googleapis.com/css?family=Bevan:regular" rel="stylesheet" type="text/css")
+    
+    
+    
+    = stylesheets
+  %body
+    #hwrapper.wrapper
+      #header
+        %ul#social_buttons
+          %li
+            %a.facebook(href="http://www.facebook.com/vagmi" title="Facebook") facebook.com/vagmi
+          %li
+            %a.twitter(href="http://twitter.com/vagmi" title="Twitter") twitter.com/vagmi
+          %li
+            %a.linkedin(href="http://linkedin.com/in/vagmi" title="LinkedIn") linkedin.com/in/vagmi
+          %li
+            %a.github(href="http://github.com/vagmi" title="Github") github.com/vagmi
+          %li
+            %a.skype(href="skype:vagmi.mudumbai" title="Skype") vagmi.mudumbai
+    .wrapper
+      #content
+        = yield
+    .wrapper#fwrapper
+      #footer
+        &copy; Vagmi Mudumbai, 2011. 

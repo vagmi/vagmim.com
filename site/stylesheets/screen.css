@@ -1,0 +1,264 @@
+/* line 14, /Users/vagmi/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, /Users/vagmi/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, /Users/vagmi/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, /Users/vagmi/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, /Users/vagmi/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, /Users/vagmi/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, /Users/vagmi/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, /Users/vagmi/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 3 */
+body {
+  background-color: #e8e8e2;
+}
+/* line 5 */
+body .wrapper {
+  width: 100%;
+  float: left;
+  clear: both;
+  color: #555555;
+}
+/* line 10 */
+body #hwrapper {
+  background-color: #333333;
+  border-bottom: 2px solid #888888;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+/* line 16 */
+body #hwrapper #header {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 19 */
+body #hwrapper #header #social_buttons {
+  float: right;
+  height: 32px;
+}
+/* line 22 */
+body #hwrapper #header #social_buttons li {
+  display: inline;
+}
+/* line 24 */
+body #hwrapper #header #social_buttons a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  float: left;
+  color: #aaaaaa;
+  text-indent: -9999px;
+}
+/* line 31 */
+body #hwrapper #header #social_buttons a.facebook {
+  background-image: url("/images/facebook_32.png");
+}
+/* line 33 */
+body #hwrapper #header #social_buttons a.twitter {
+  background-image: url("/images/twitter_32.png");
+}
+/* line 35 */
+body #hwrapper #header #social_buttons a.linkedin {
+  background-image: url("/images/linkedin_32.png");
+}
+/* line 37 */
+body #hwrapper #header #social_buttons a.github {
+  background-image: url("/images/github_32.png");
+}
+/* line 39 */
+body #hwrapper #header #social_buttons a.skype {
+  background-image: url("/images/skype_32.png");
+}
+/* line 41 */
+body #content {
+  width: 800px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 45 */
+body #content .small_text {
+  font-family: "Raleway", sans;
+  font-size: 30px;
+  margin: 0.5em;
+  color: #999999;
+}
+/* line 51 */
+body #content .section {
+  margin: 50px 0;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #aaaaaa;
+}
+/* line 55 */
+body #content #hello {
+  font-size: 50px;
+}
+/* line 57 */
+body #content #first_name {
+  font-family: "Bevan", serif;
+  font-size: 120px;
+}
+/* line 60 */
+body #content #last_name {
+  font-family: "Bevan", serif;
+  font-size: 70px;
+}
+/* line 63 */
+body #content #technologies {
+  font-family: "Bevan", serif;
+  font-size: 30px;
+}
+/* line 66 */
+body #content #technologies .technology {
+  font-family: "Bevan", serif;
+  font-size: 50px;
+}
+/* line 69 */
+body #content .highlight {
+  font-family: "Bevan", serif;
+  color: #555555;
+}
+/* line 72 */
+body #content a.highlight {
+  text-decoration: none;
+}
+/* line 74 */
+body #content #artha42 {
+  width: 100%;
+  text-align: center;
+}
+/* line 77 */
+body #content #artha42 a {
+  display: block;
+  width: 250px;
+  height: 70px;
+  margin-left: 275px;
+  background-image: url("/images/logo_artha42.png");
+  background-repat: no-repeat;
+  text-indent: -9999px;
+}
+/* line 85 */
+body #content #railspundit {
+  width: 100%;
+  text-align: center;
+}
+/* line 88 */
+body #content #railspundit a {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-left: 300px;
+  background-image: url("/images/rails_pundit.png");
+  background-repat: no-repeat;
+  text-indent: -9999px;
+}
+/* line 96 */
+body #content #reach_me {
+  margin-left: 80px;
+  height: 150px;
+}
+/* line 99 */
+body #content #reach_me li {
+  display: inline;
+}
+/* line 101 */
+body #content #reach_me li a {
+  display: block;
+  float: left;
+  width: 128px;
+  height: 128px;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  font-family: "Raleway", serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: #555555;
+}
+/* line 112 */
+body #content #reach_me li a:hover {
+  text-indent: 0px;
+  padding-top: 128px;
+}
+/* line 115 */
+body #content #reach_me li a.twitter {
+  background-image: url("/images/twitter_128.png");
+}
+/* line 117 */
+body #content #reach_me li a.facebook {
+  background-image: url("/images/facebook_128.png");
+}
+/* line 119 */
+body #content #reach_me li a.linkedin {
+  background-image: url("/images/linkedin_128.png");
+}
+/* line 121 */
+body #content #reach_me li a.github {
+  background-image: url("/images/github_128.png");
+}
+/* line 123 */
+body #content #reach_me li a.skype {
+  background-image: url("/images/skype_128.png");
+}
+/* line 125 */
+body #fwrapper {
+  background-color: #333333;
+  padding: 5px 0;
+}
+/* line 128 */
+body #fwrapper #footer {
+  width: 960px;
+  margin: 0px auto;
+  text-align: center;
+  color: #888888;
+  font-family: "Raleway", sans-serif;
+}
