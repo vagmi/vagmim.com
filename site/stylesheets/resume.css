@@ -27,65 +27,75 @@ body {
   color: #333333;
 }
 
-@media print {
+@media screen {
   /* line 23 */
+  .printonly {
+    display: none;
+  }
+}
+@media print {
+  /* line 27 */
   #print_button {
     display: none;
   }
 }
-/* line 27 */
+/* line 31 */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Corben", "Georgia", serif;
   font-weight: 400;
 }
 
-/* line 32 */
+/* line 36 */
 .contact a {
   text-decoration: none;
 }
 
-/* line 34 */
+/* line 38 */
 .btn {
   text-decoration: none;
 }
 
-/* line 37 */
+/* line 41 */
 .content h3, .content h4, .content h5, .content h6 {
   font-family: "Josefin Sans", "Ubuntu", sans-serif;
   font-weight: 700;
 }
-/* line 40 */
+/* line 44 */
 .content .experience {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 43 */
+/* line 47 */
 .content .experience .time {
   text-align: right;
 }
-/* line 45 */
+/* line 49 */
 .content h3.project {
   font-family: "Helvetica Neue";
 }
-/* line 47 */
+/* line 51 */
+.content h3.project .well {
+  padding: 8px;
+}
+/* line 53 */
 .content h3.project small {
   font-size: 1em;
   color: #555555;
 }
-/* line 51 */
+/* line 57 */
 .content h3 a {
   color: #555555;
   text-decoration: none;
   font-weight: bold;
 }
-/* line 55 */
+/* line 61 */
 .content p, .content li {
   font-family: "Signika Negative", "Ubuntu", sans-serif;
   font-size: 1.2em;
   line-height: 1.8em;
   color: #555555;
 }
-/* line 61 */
+/* line 67 */
 .content ul.skills li {
   display: inline-block;
   margin: 5px;
@@ -94,17 +104,27 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #dddddd;
 }
 
-/* line 67 */
+/* line 73 */
+hr {
+  border-top: 1px solid #cccccc;
+}
+
+/* line 76 */
+.summary .well {
+  padding: 8px;
+}
+
+/* line 78 */
 #experience_container {
   width: 100%;
 }
-/* line 69 */
+/* line 80 */
 #experience_container h2.exp {
   position: fixed;
   left: 0;
   top: 20;
 }
-/* line 73 */
+/* line 84 */
 #experience_container #experience_timeline {
   width: 705px;
   float: none;
@@ -112,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 60px;
 }
 
-/* line 78 */
+/* line 89 */
 .efixed {
   position: fixed;
   top: 0;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Vagmi Mudumbai - Ruby on Rails Programmer, Tech Blogger, Entrepreneur</title>
+    <title>Vagmi Mudumbai - Architect, Tech Blogger, Entrepreneur</title>
     <link href='/stylesheets/bootstrap.min.css' rel='stylesheet' />
     <link href='http://fonts.googleapis.com/css?family=Signika+Negative:300,400|Corben:400,700|Josefin+Sans:100,300,400,700' rel='stylesheet' type='text/css' />
     <link href='/stylesheets/resume.css' rel='stylesheet' />
@@ -47,7 +47,7 @@
                 <ul>
                   <li>10 years of experience</li>
                   <li>Expertise in developing web apps</li>
-                  <li>A very quick learner</li>
+                  <li>A continuous learner - Savvy about newer technologies</li>
                   <li>Entrepreneurial Attitude</li>
                 </ul>
               </div>
@@ -91,29 +91,37 @@
               Apr 2009 to present
             </h3>
             <div class='span12 details'>
-              <p>
-                We take pride in building great yet simple software. In addition to taking up several client projects, we also built our own product called
-                <a href='http://www.keeprecruiting.com' target='_blank'>KeepRecruiting.</a>
-                I also conducted public Rails workshops under the name
-                <a href='http://www.railspundit.com' target='_blank'>RailsPundit</a>
-                and offered the same as a corporate in-house training. I intend to follow up on it with various screencasts on building cutting edge web applications. Here are some of my works that I am proud of.
-              </p>
+              <ul>
+                <li>Hired and Led a team of 16 developers</li>
+                <li>Architected and developed software solutions from conception to deployment</li>
+                <li>Built a product called <a href="http://www.keeprecruiting.com" target="_blank">KeepRecruiting</a></li>
+                <li>Engaged with clients to deliver quality solutions</li>
+                <li>Designed, marketed and conducted Rails workshops called <a href="http://www.railspundit.com" target="_blank">RailsPundit</a></li>
+                <li>Contributed to <a href="#opensource">Open Source</a></li>
+              </ul>
+              <p>Here are some of my work that I am proud of.</p>
               <h3 class='project'>
                 <a href='http://www.keeprecruiting.com' target='_blank'>KeepRecruiting</a>
                 <br />
-                <small>Rails 3 / jQuery / MySQL / Apache POI / Sphinx / Linode</small>
+                <div class='well'>
+                  <small>Rails 3 / jQuery / MySQL / Apache POI / Sphinx / Linode</small>
+                </div>
               </h3>
               <p>KeepRecruiting is an online candidate tracking system. It is a SaaS product that provides a turn key online job board. Organizations which sign up with the service can create their jobs site in a matter of a few minutes. It allows you to perform a full text search not only on the candidate's meta data but also inside the contents of the uploaded resume. It provides collaboration tools that help the HR managers and executives of an organization communicate more effectively with each other. It integrates with social networking sites like LinkedIn and Facebook. It allows candidates to apply with their LinkedIn account and provides the organization an approved view of the linked in profile including recommendations and extended profile data that is usually not available unless the candidate is already a part of your network. It also allows members of an organization to selectively publish the vacancy into their Facebook wall or a page they own.</p>
               <h3 class='project'>
                 <a href='http://www.highlightmagic.com' target='_blank'>HighlightMagic</a>
                 <br />
-                <small>Rails 3.1 / Coffeescript / Backbone.js / HTML5 (Video &amp; File API) / Faye / FFMpeg / EC2 / Heroku</small>
+                <div class='well'>
+                  <small>Rails 3.1 / Coffeescript / Backbone.js / HTML5 (Video &amp; File API) / Faye / FFMpeg / EC2 / Heroku</small>
+                </div>
               </h3>
               <p>HighlightMagic is a tool to be used by individuals aspiring to be professional sportsmen. These budding athletes could record their game, upload the video, create highlights and share them with coaches who could then comment on highlight. Usually these videos are huge (1 - 1.5 Gigs). The client wanted a non-sucky way to upload these files. I implemented a resumable file upload. We used the HTML5 file to split the file into chunks and posted them to the Rails server. The Rails server transfers it to Amazon S3. The user could either close his laptop lid or lose his internet connection without affecting the upload. As long as the browser tab remains open we can resume the file upload. In the meanwhile if the file that is being uploaded is in the format that the browser supports (for e.g., H264 on Chrome) we instantly show the video and allow the user to create clips. This is done using the File API's CreateObjectURL and the ability of the HTML5 video player to play files based on these object URLs. The upload process happens in the background and once the upload is done, the video is transcoded, the thumbnails generated and the clips are cut from the transcoded video. The user can then share these clips with coaches who can then comment on it. The transcoder was built as an independent service and is hosted on Amazon EC2 (us-east-1) and can be independently scaled. The main app is hosted on Heroku to be in the same availability zone.</p>
               <h3 class='project'>
                 <a href='http://www.auditionmagic.com' target='_blank'>AuditionMagic</a>
                 <br />
-                <small>Rails 3.1 / Coffeescript / Backbone.js / Heroku</small>
+                <div class='well'>
+                  <small>Rails 3.1 / Coffeescript / Backbone.js / Heroku</small>
+                </div>
               </h3>
               <p>
                 AuditionMagic allows casting agencies to manage their projects, roles, auditions, artist (talent) details and provides a collaborative environment for casting directors and reviewers to vote and comment on auditions for a given role. The members of the casting agency would upload videos and images of the auditions that took place. Videos were processed with zencoder to convert them to H264 MP4s. We used Rails 3.1, CoffeeScript and Backbone.js to build this as a single page app.
@@ -121,7 +129,9 @@
               <h3 class='project'>
                 <a href='http://sharp-meadow-3952.herokuapp.com/' target='_blank'>GoNeighborly</a>
                 <br />
-                <small>Rails 3.1 / Coffeescript / Backbone.js / Faye / MongoDB / Heroku</small>
+                <div class='well'>
+                  <small>Rails 3.1 / Coffeescript / Backbone.js / Faye / MongoDB / Heroku</small>
+                </div>
               </h3>
               <p>
                 GoNeighborly is a service under the local-social category that tries to answer the question "What's happening in a given place?" It has a really cool Google Maps mashup that pops up a message on the marker when any other user comments on it. This was done with Faye, Backbone.js and the Google Maps API. The backend was MongoDB.
@@ -129,7 +139,9 @@
               <h3 class='project'>
                 <a href='http://www.apolloprism.com/' target='_blank'>PHR Health Connect</a>
                 <br />
-                <small>Sinatra / MongoDB / JRuby / jQuery</small>
+                <div class='well'>
+                  <small>Sinatra / MongoDB / JRuby / jQuery</small>
+                </div>
               </h3>
               <p>
                 PHR Health Connect powers
@@ -139,7 +151,9 @@
               <h3 class='project'>
                 ClapsAndBoos
                 <br />
-                <small>Sinatra /  MongoDB / jQuery</small>
+                <div class='well'>
+                  <small>Sinatra /  MongoDB / jQuery</small>
+                </div>
               </h3>
               <p>
                 Claps and Boos is a movie review website with a difference. It sports a strong 11,000 plus strong member community which was completely bootstrapped. The entire site was built in little over 3 months. The site encourages participation using an XBox style achievements system called badges. Here are a few salient features for the app.
@@ -154,7 +168,9 @@
               <h3 class='project'>
                 Star Employee Intranet
                 <br />
-                <small>Rails 2 / PostgreSQL / Apache POI / PDFBox / Sphinx</small>
+                <div class='well'>
+                  <small>Rails 2 / PostgreSQL / Apache POI / PDFBox / Sphinx</small>
+                </div>
               </h3>
               <p>
                 Star Employee Intranet helped its employees to share information, photos and blog posts internally within the organization. I also built a document management system that allowed the users to version files. Once uploaded, the files were parsed via Apache POI / PDFBox and converted to text. Sphinx then built an index of the text within the document which allowed users to search within the document they had uploaded. It also featured the ability to control access on any of these resources on the basis of an individual user or to a group. This project was started when the company was establishing presence in several towns and smaller business districts in India. Setting up their private network was expensive and a long drawn process. That is when the company envisioned the intranet on the cloud.
@@ -186,10 +202,18 @@
               <p>
                 Over the course of my career at SAP Research and Development Labs, I had worked on a wide variety of technologies starting with InstallShield, C#/.NET, Java, HTML5 and Adobe Flex/ActionScript. Here is a summary of my accomplishments at SAP.
               </p>
+              <ul>
+                <li>Led teams on different technologies while seamlessly moving between them</li>
+                <li>Worked on a wide array of technologies</li>
+                <li>Championed for a simpler build system to reduce the turn around time for bugs</li>
+                <li>Contributed to the installation team winning the simplicity values award of 2005</li>
+              </ul>
               <h3 class='project'>
                 AUI Framework
                 <br />
-                <small>Adobe Flex/ActionScript</small>
+                <div class='well'>
+                  <small>Adobe Flex/ActionScript</small>
+                </div>
               </h3>
               <p>
                 I was leading a team of developers. As a part of the business user tools initiative under SAP, we were commisioned to build a UI framework that could be used to build various business reports and analytics widgets on top of the Flex framework. We build the framework initially based on the open source
@@ -199,7 +223,9 @@
               <h3 class='project'>
                 NWDI Client for .Net
                 <br />
-                <small>C# / .NET v2.0</small>
+                <div class='well'>
+                  <small>C# / .NET v2.0</small>
+                </div>
               </h3>
               <p>
                 I led the team in building a .NET client for the Netweaver Development Infrastructure. I interfaced with the web services provided by the service side components like SLD, CBS and the DTR. I also built a .NET wrapper around the DTR library that was later integrated with Visual Studio's IVsHierarchy to provide checkin, checkout, display and other source control integration facilities.
@@ -207,7 +233,9 @@
               <h3 class='project'>
                 C# for Eclipse
                 <br />
-                <small>C#, MDBG, Java, Eclipse PDT</small>
+                <div class='well'>
+                  <small>C#, MDBG, Java, Eclipse PDT</small>
+                </div>
               </h3>
               <p>
                 We demonstrated this as a proof of concept. We integrated the C# editor, the msbuild project model and the Antechinus C# editor with the existing SAP NWDS (Netweaver Developer Studio) to show that we could build .NET projects and more specifically the Ocassionally Connected Apps (OCA.NET) projects right inside NWDS that could leverage all the facilities provided by existing eclipse plugins provided by NWDS for integrating to NWDI and other SAP specific plugins. We achieved the complete functionality of setting breakpoints, inspecting locals and evaluating watch expressions using the Eclipse's default debug perspective.
@@ -215,7 +243,9 @@
               <h3 class='project'>
                 SAP Environment Checker
                 <br />
-                <small>C# / .NET 2.0, IronPython and loads of XML processing</small>
+                <div class='well'>
+                  <small>C# / .NET 2.0, IronPython and loads of XML processing</small>
+                </div>
               </h3>
               <p>
                 I had written SAP Environment Checker to help me analyze the health of a system by detective certain aspects like presence of DLLs in the right place, presence of registry entries, an ability to connect with the database and check the version of the client database and so on. I had built it in such a manner that the tool itself was really small. If an assembly placed in the same directory as the tool and it exposed classes conforming to an interface and is marked XMLSerializable, it would be dynamically loaded and any corresponding entries in the ".env" file could be processed. The results were tabulated using XSLT to present it as a nice HTML page that could be printed out. The tool also sported a IronPython plugin that could run any snippet of python code that could provide a similar result.
@@ -223,7 +253,9 @@
               <h3 class='project'>
                 SAP CRM Mobile Client 4.0 and 5.0 Installers
                 <br />
-                <small>InstallShield (MSI and InstallScript projects), C#/.NET</small>
+                <div class='well'>
+                  <small>InstallShield (MSI and InstallScript projects), C#/.NET</small>
+                </div>
               </h3>
               <p>
                 SAP CRM Mobile Client in 4.0 was based on VBA and the 5.0 version was based on .NET. As a part of the team we were maintaining the 4.0 install package as it was already under SP4 when I joined however the work on 5.0 package was just beginning. The 4.0 installer took about 13 hours to build and was diffcult to service upgrades. I had rearchitected the 5.0 setup to do the following.
@@ -348,6 +380,14 @@
               </tr>
             </tbody>
           </table>
+          <div class='printonly'>
+            <hr />
+            <p>
+              This page is a copy as of
+              <span class='time'></span>
+              . Visit http://www.vagmim.com/resume.html for an interactive and a recent version of the resume.
+            </p>
+          </div>
         </div>
       </div>
     </div>

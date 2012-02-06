@@ -19,6 +19,10 @@ body
     text-decoration: none
     color: #333
 
+@media screen
+  .printonly
+    display: none
+
 @media print 
   #print_button
     display: none
@@ -44,6 +48,8 @@ h1, h2, h3, h4, h5, h6
       text-align: right
   h3.project
     font-family: "Helvetica Neue"
+    .well
+      padding: 8px
     small
       font-size: 1em
       color: #555
@@ -64,6 +70,11 @@ h1, h2, h3, h4, h5, h6
       border: 1px solid #777
       padding: 3px 5px
       background-color: #ddd
+hr
+  border-top: 1px solid #ccc
+.summary
+  .well
+    padding: 8px
 #experience_container
   width: 100%
   h2.exp

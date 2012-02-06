@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $(".printonly .time").text(Date.today().toLocaleDateString());
   $dir="down";
   var r=new Raphael($("#experience_timeline")[0]);
   var width=$("#experience_timeline").innerWidth();
@@ -15,7 +16,6 @@ $(document).ready(function(){
                 {time: "Mar 2009", name: "Artha42 & Dharana", link: "#dharana"}];
 
 
-  console.log(width,height);
   var recttop=(height-6)/2;
   var rectwidth = width-10;
   var default_style = {fill: "#aaa", stroke: "#aaa"};

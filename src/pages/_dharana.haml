@@ -7,39 +7,46 @@
   %br
   Apr 2009 to present
 .span12.details
-  %p
-    We take pride in building great yet simple software. In addition to taking up several client projects, we also built our own product called 
-    %a(href="http://www.keeprecruiting.com" target="_blank") KeepRecruiting. 
-    I also conducted public Rails workshops under the name 
-    %a(href="http://www.railspundit.com" target="_blank") RailsPundit 
-    and offered the same as a corporate in-house training. I intend to follow up on it with various screencasts on building cutting edge web applications. Here are some of my works that I am proud of.
+  %ul
+    %li Hired and Led a team of 16 developers
+    %li Architected and developed software solutions from conception to deployment
+    %li Built a product called <a href="http://www.keeprecruiting.com" target="_blank">KeepRecruiting</a>
+    %li Engaged with clients to deliver quality solutions
+    %li Designed, marketed and conducted Rails workshops called <a href="http://www.railspundit.com" target="_blank">RailsPundit</a>
+    %li Contributed to <a href="#opensource">Open Source</a>
+  %p Here are some of my work that I am proud of.
   %h3.project 
     %a(href="http://www.keeprecruiting.com" target="_blank") KeepRecruiting
     %br
-    %small Rails 3 / jQuery / MySQL / Apache POI / Sphinx / Linode
+    .well
+      %small Rails 3 / jQuery / MySQL / Apache POI / Sphinx / Linode
   %p KeepRecruiting is an online candidate tracking system. It is a SaaS product that provides a turn key online job board. Organizations which sign up with the service can create their jobs site in a matter of a few minutes. It allows you to perform a full text search not only on the candidate's meta data but also inside the contents of the uploaded resume. It provides collaboration tools that help the HR managers and executives of an organization communicate more effectively with each other. It integrates with social networking sites like LinkedIn and Facebook. It allows candidates to apply with their LinkedIn account and provides the organization an approved view of the linked in profile including recommendations and extended profile data that is usually not available unless the candidate is already a part of your network. It also allows members of an organization to selectively publish the vacancy into their Facebook wall or a page they own.
   
   %h3.project
     %a(href="http://www.highlightmagic.com" target="_blank") HighlightMagic
     %br
-    %small Rails 3.1 / Coffeescript / Backbone.js / HTML5 (Video &amp; File API) / Faye / FFMpeg / EC2 / Heroku
+    .well
+      %small Rails 3.1 / Coffeescript / Backbone.js / HTML5 (Video &amp; File API) / Faye / FFMpeg / EC2 / Heroku
   %p HighlightMagic is a tool to be used by individuals aspiring to be professional sportsmen. These budding athletes could record their game, upload the video, create highlights and share them with coaches who could then comment on highlight. Usually these videos are huge (1 - 1.5 Gigs). The client wanted a non-sucky way to upload these files. I implemented a resumable file upload. We used the HTML5 file to split the file into chunks and posted them to the Rails server. The Rails server transfers it to Amazon S3. The user could either close his laptop lid or lose his internet connection without affecting the upload. As long as the browser tab remains open we can resume the file upload. In the meanwhile if the file that is being uploaded is in the format that the browser supports (for e.g., H264 on Chrome) we instantly show the video and allow the user to create clips. This is done using the File API's CreateObjectURL and the ability of the HTML5 video player to play files based on these object URLs. The upload process happens in the background and once the upload is done, the video is transcoded, the thumbnails generated and the clips are cut from the transcoded video. The user can then share these clips with coaches who can then comment on it. The transcoder was built as an independent service and is hosted on Amazon EC2 (us-east-1) and can be independently scaled. The main app is hosted on Heroku to be in the same availability zone.
   %h3.project
     %a(href="http://www.auditionmagic.com" target="_blank") AuditionMagic 
     %br
-    %small Rails 3.1 / Coffeescript / Backbone.js / Heroku
+    .well
+      %small Rails 3.1 / Coffeescript / Backbone.js / Heroku
   %p
     AuditionMagic allows casting agencies to manage their projects, roles, auditions, artist (talent) details and provides a collaborative environment for casting directors and reviewers to vote and comment on auditions for a given role. The members of the casting agency would upload videos and images of the auditions that took place. Videos were processed with zencoder to convert them to H264 MP4s. We used Rails 3.1, CoffeeScript and Backbone.js to build this as a single page app. 
   %h3.project 
     %a(href="http://sharp-meadow-3952.herokuapp.com/" target="_blank") GoNeighborly
     %br
-    %small Rails 3.1 / Coffeescript / Backbone.js / Faye / MongoDB / Heroku
+    .well
+      %small Rails 3.1 / Coffeescript / Backbone.js / Faye / MongoDB / Heroku
   %p
     GoNeighborly is a service under the local-social category that tries to answer the question "What's happening in a given place?" It has a really cool Google Maps mashup that pops up a message on the marker when any other user comments on it. This was done with Faye, Backbone.js and the Google Maps API. The backend was MongoDB.
   %h3.project
     %a(href="http://www.apolloprism.com/" target="_blank") PHR Health Connect
     %br
-    %small Sinatra / MongoDB / JRuby / jQuery
+    .well
+      %small Sinatra / MongoDB / JRuby / jQuery
   %p
     PHR Health Connect powers 
     %a(href="http://www.apolloprism.com" target="_blank") Apollo Prism.
@@ -47,7 +54,8 @@
   %h3.project 
     ClapsAndBoos
     %br
-    %small Sinatra /  MongoDB / jQuery
+    .well
+      %small Sinatra /  MongoDB / jQuery
   %p
     Claps and Boos is a movie review website with a difference. It sports a strong 11,000 plus strong member community which was completely bootstrapped. The entire site was built in little over 3 months. The site encourages participation using an XBox style achievements system called badges. Here are a few salient features for the app.
   %ul
@@ -60,7 +68,8 @@
   %h3.project
     Star Employee Intranet
     %br
-    %small Rails 2 / PostgreSQL / Apache POI / PDFBox / Sphinx 
+    .well
+      %small Rails 2 / PostgreSQL / Apache POI / PDFBox / Sphinx 
   %p
     Star Employee Intranet helped its employees to share information, photos and blog posts internally within the organization. I also built a document management system that allowed the users to version files. Once uploaded, the files were parsed via Apache POI / PDFBox and converted to text. Sphinx then built an index of the text within the document which allowed users to search within the document they had uploaded. It also featured the ability to control access on any of these resources on the basis of an individual user or to a group. This project was started when the company was establishing presence in several towns and smaller business districts in India. Setting up their private network was expensive and a long drawn process. That is when the company envisioned the intranet on the cloud.
   %p
