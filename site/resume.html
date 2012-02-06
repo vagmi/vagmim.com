@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vagmi Mudumbai - Ruby on Rails Programmer, Tech Blogger, Entrepreneur</title>
+    <link href='/stylesheets/bootstrap.min.css' rel='stylesheet' />
+    <link href='http://fonts.googleapis.com/css?family=Signika+Negative:300,400|Corben:400,700|Josefin+Sans:100,300,400,700' rel='stylesheet' type='text/css' />
+    <link href='/stylesheets/resume.css' rel='stylesheet' />
+  </head>
+  <body>
+    <div id='print_button'>
+      <div class='icon-print'></div>
+      <a href='#' id='print' onclick='javascript:window.print();return false;'>Print this page</a>
+    </div>
+    <div class='container'>
+      <div class='row'>
+        <div class='span2 image'>
+          <img src='/images/vagmi.jpg' width='100%' />
+        </div>
+        <div class='span6 header'>
+          <h1>
+            Vagmi Mudumbai
+            <br />
+            <small>Entrepreneur / Architect / Tech Blogger</small>
+          </h1>
+          <a class='btn small' href='http://linkedin.com/in/vagmi' target='_blank'>LinkedIn</a>
+          <a class='btn' href='http://github.com/vagmi' target='_blank'>Github</a>
+        </div>
+        <div class='span4'>
+          <div class='well contact'>
+            <div class='icon-envelope' style='margin-top:3px'></div>
+            <a href='mailto:hireme@vagmim.com'>hireme@vagmim.com</a>
+            <br />
+            <div class='icon-volume-up' style='margin-top:3px'></div>
+            <a href='#'>+91-9566099716</a>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='content span12'>
+          <h2 id='objective'>Objective</h2>
+          <div class='row'>
+            <div class='obj span7'>
+              <p>To work for an organization that values the craft of software development and provides the right kind of environment and the freedom to build great software. I am very passionate about the open source and would like to join an organization that not only uses open source software but creates or contributes to the ecosystem.</p>
+            </div>
+            <div class='summary span5'>
+              <div class='well'>
+                <ul>
+                  <li>10 years of experience</li>
+                  <li>Expertise in developing web apps</li>
+                  <li>A very quick learner</li>
+                  <li>Entrepreneurial Attitude</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h2 id='skills'>Skills</h2>
+          <ul class='skills'>
+            <li>Ruby</li>
+            <li>Rails</li>
+            <li>Sinatra</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+            <li>Coffeescript</li>
+            <li>JQuery</li>
+            <li>Backbone.js</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Cucumber</li>
+            <li>Java</li>
+            <li>C#</li>
+          </ul>
+          <hr />
+          <h2>Experience</h2>
+          <div class='row'>
+            <div id='experience_container'>
+              <div class='span12' id='experience_timeline'></div>
+            </div>
+          </div>
+          <div class='row experience' id='dharana'>
+            <h3 class='span6 org'>
+              <a href='http://www.dharanasoft.com' target='_blank'>Dharana Software Innovations Pvt Ltd</a>
+              <br />
+              <a href='http://www.artha42.com' target='_blank'>Artha42 Innovations Pvt Ltd</a>
+            </h3>
+            <h3 class='span6 time'>
+              CTO &amp; Co-Founder
+              <br />
+              Apr 2009 to present
+            </h3>
+            <div class='span12 details'>
+              <p>
+                We take pride in building great yet simple software. In addition to taking up several client projects, we also built our own product called
+                <a href='http://www.keeprecruiting.com' target='_blank'>KeepRecruiting.</a>
+                I also conducted public Rails workshops under the name
+                <a href='http://www.railspundit.com' target='_blank'>RailsPundit</a>
+                and offered the same as a corporate in-house training. I intend to follow up on it with various screencasts on building cutting edge web applications. Here are some of my works that I am proud of.
+              </p>
+              <h3 class='project'>
+                <a href='http://www.keeprecruiting.com' target='_blank'>KeepRecruiting</a>
+                <br />
+                <small>Rails 3 / jQuery / MySQL / Apache POI / Sphinx / Linode</small>
+              </h3>
+              <p>KeepRecruiting is an online candidate tracking system. It is a SaaS product that provides a turn key online job board. Organizations which sign up with the service can create their jobs site in a matter of a few minutes. It allows you to perform a full text search not only on the candidate's meta data but also inside the contents of the uploaded resume. It provides collaboration tools that help the HR managers and executives of an organization communicate more effectively with each other. It integrates with social networking sites like LinkedIn and Facebook. It allows candidates to apply with their LinkedIn account and provides the organization an approved view of the linked in profile including recommendations and extended profile data that is usually not available unless the candidate is already a part of your network. It also allows members of an organization to selectively publish the vacancy into their Facebook wall or a page they own.</p>
+              <h3 class='project'>
+                <a href='http://www.highlightmagic.com' target='_blank'>HighlightMagic</a>
+                <br />
+                <small>Rails 3.1 / Coffeescript / Backbone.js / HTML5 (Video &amp; File API) / Faye / FFMpeg / EC2 / Heroku</small>
+              </h3>
+              <p>HighlightMagic is a tool to be used by individuals aspiring to be professional sportsmen. These budding athletes could record their game, upload the video, create highlights and share them with coaches who could then comment on highlight. Usually these videos are huge (1 - 1.5 Gigs). The client wanted a non-sucky way to upload these files. I implemented a resumable file upload. We used the HTML5 file to split the file into chunks and posted them to the Rails server. The Rails server transfers it to Amazon S3. The user could either close his laptop lid or lose his internet connection without affecting the upload. As long as the browser tab remains open we can resume the file upload. In the meanwhile if the file that is being uploaded is in the format that the browser supports (for e.g., H264 on Chrome) we instantly show the video and allow the user to create clips. This is done using the File API's CreateObjectURL and the ability of the HTML5 video player to play files based on these object URLs. The upload process happens in the background and once the upload is done, the video is transcoded, the thumbnails generated and the clips are cut from the transcoded video. The user can then share these clips with coaches who can then comment on it. The transcoder was built as an independent service and is hosted on Amazon EC2 (us-east-1) and can be independently scaled. The main app is hosted on Heroku to be in the same availability zone.</p>
+              <h3 class='project'>
+                <a href='http://www.auditionmagic.com' target='_blank'>AuditionMagic</a>
+                <br />
+                <small>Rails 3.1 / Coffeescript / Backbone.js / Heroku</small>
+              </h3>
+              <p>
+                AuditionMagic allows casting agencies to manage their projects, roles, auditions, artist (talent) details and provides a collaborative environment for casting directors and reviewers to vote and comment on auditions for a given role. The members of the casting agency would upload videos and images of the auditions that took place. Videos were processed with zencoder to convert them to H264 MP4s. We used Rails 3.1, CoffeeScript and Backbone.js to build this as a single page app.
+              </p>
+              <h3 class='project'>
+                <a href='http://sharp-meadow-3952.herokuapp.com/' target='_blank'>GoNeighborly</a>
+                <br />
+                <small>Rails 3.1 / Coffeescript / Backbone.js / Faye / MongoDB / Heroku</small>
+              </h3>
+              <p>
+                GoNeighborly is a service under the local-social category that tries to answer the question "What's happening in a given place?" It has a really cool Google Maps mashup that pops up a message on the marker when any other user comments on it. This was done with Faye, Backbone.js and the Google Maps API. The backend was MongoDB.
+              </p>
+              <h3 class='project'>
+                <a href='http://www.apolloprism.com/' target='_blank'>PHR Health Connect</a>
+                <br />
+                <small>Sinatra / MongoDB / JRuby / jQuery</small>
+              </h3>
+              <p>
+                PHR Health Connect powers
+                <a href='http://www.apolloprism.com' target='_blank'>Apollo Prism.</a>
+                It provides a personal health record to an individual that can be maintained online across hospitals, clinics, consultants and labs. It has currently been deployed in Apollo Hospitals in prominent cities like Chennai, Bangalore and Delhi. When a patient walks in to a hospital and performs any medical tests, the results are imported on to the server using a agent installed in premises of the hospital. The patient is then notified via SMS that he can access his data and he does so by logging into ApolloPrism.com.
+              </p>
+              <h3 class='project'>
+                ClapsAndBoos
+                <br />
+                <small>Sinatra /  MongoDB / jQuery</small>
+              </h3>
+              <p>
+                Claps and Boos is a movie review website with a difference. It sports a strong 11,000 plus strong member community which was completely bootstrapped. The entire site was built in little over 3 months. The site encourages participation using an XBox style achievements system called badges. Here are a few salient features for the app.
+              </p>
+              <ul>
+                <li>OpenID support for logging in with Google/Yahoo account</li>
+                <li>A review and independent article publishing platform with moderation</li>
+                <li>A flexible commenting system on Movies, Reviews and Articles</li>
+                <li>A flexible scoring system for both movies and reviews</li>
+                <li>Badges for user activity to improve engagement</li>
+              </ul>
+              <h3 class='project'>
+                Star Employee Intranet
+                <br />
+                <small>Rails 2 / PostgreSQL / Apache POI / PDFBox / Sphinx</small>
+              </h3>
+              <p>
+                Star Employee Intranet helped its employees to share information, photos and blog posts internally within the organization. I also built a document management system that allowed the users to version files. Once uploaded, the files were parsed via Apache POI / PDFBox and converted to text. Sphinx then built an index of the text within the document which allowed users to search within the document they had uploaded. It also featured the ability to control access on any of these resources on the basis of an individual user or to a group. This project was started when the company was establishing presence in several towns and smaller business districts in India. Setting up their private network was expensive and a long drawn process. That is when the company envisioned the intranet on the cloud.
+              </p>
+              <p>
+                The intranet was packed with features like:
+              </p>
+              <ul>
+                <li>Document Sharing with versioning</li>
+                <li>Event and Calendar management</li>
+                <li>Gallery and Image uploads</li>
+                <li>A Discussion Forum</li>
+                <li>An internal corporate blog</li>
+                <li>This enabled the client to leverage our tool to ease their communication.</li>
+              </ul>
+            </div>
+            <hr />
+          </div>
+          <div class='row experience' id='sap'>
+            <h3 class='span6 org'>
+              <a href='http://www.sap.com/india/about/company/saplabs/index.epx' target='_blank'>SAP Labs India</a>
+            </h3>
+            <h3 class='span6 time'>
+              Associate Architect
+              <br />
+              Oct 2004 to Mar 2009
+            </h3>
+            <div class='span12 details'>
+              <p>
+                Over the course of my career at SAP Research and Development Labs, I had worked on a wide variety of technologies starting with InstallShield, C#/.NET, Java, HTML5 and Adobe Flex/ActionScript. Here is a summary of my accomplishments at SAP.
+              </p>
+              <h3 class='project'>
+                AUI Framework
+                <br />
+                <small>Adobe Flex/ActionScript</small>
+              </h3>
+              <p>
+                I was leading a team of developers. As a part of the business user tools initiative under SAP, we were commisioned to build a UI framework that could be used to build various business reports and analytics widgets on top of the Flex framework. We build the framework initially based on the open source
+                <a href='http://sourceforge.net/adobe/cairngorm/wiki/About/'>Cairngorm 2 framework.</a>
+                However we found that for large applications the size of the SWF was huge and the build times were quite large. We then evaluated the Polestar framework built by the Business Objects team and modified it to suit our requirements. The Polestar project implemented the Eclipse's platform and runtime libraries in Flex. I forked the project and added the ability to discover plugins and load plugins based on extension points and extensions. I also built a client side context framework that extended the AS3 Binding across different plugins (SWFs).
+              </p>
+              <h3 class='project'>
+                NWDI Client for .Net
+                <br />
+                <small>C# / .NET v2.0</small>
+              </h3>
+              <p>
+                I led the team in building a .NET client for the Netweaver Development Infrastructure. I interfaced with the web services provided by the service side components like SLD, CBS and the DTR. I also built a .NET wrapper around the DTR library that was later integrated with Visual Studio's IVsHierarchy to provide checkin, checkout, display and other source control integration facilities.
+              </p>
+              <h3 class='project'>
+                C# for Eclipse
+                <br />
+                <small>C#, MDBG, Java, Eclipse PDT</small>
+              </h3>
+              <p>
+                We demonstrated this as a proof of concept. We integrated the C# editor, the msbuild project model and the Antechinus C# editor with the existing SAP NWDS (Netweaver Developer Studio) to show that we could build .NET projects and more specifically the Ocassionally Connected Apps (OCA.NET) projects right inside NWDS that could leverage all the facilities provided by existing eclipse plugins provided by NWDS for integrating to NWDI and other SAP specific plugins. We achieved the complete functionality of setting breakpoints, inspecting locals and evaluating watch expressions using the Eclipse's default debug perspective.
+              </p>
+              <h3 class='project'>
+                SAP Environment Checker
+                <br />
+                <small>C# / .NET 2.0, IronPython and loads of XML processing</small>
+              </h3>
+              <p>
+                I had written SAP Environment Checker to help me analyze the health of a system by detective certain aspects like presence of DLLs in the right place, presence of registry entries, an ability to connect with the database and check the version of the client database and so on. I had built it in such a manner that the tool itself was really small. If an assembly placed in the same directory as the tool and it exposed classes conforming to an interface and is marked XMLSerializable, it would be dynamically loaded and any corresponding entries in the ".env" file could be processed. The results were tabulated using XSLT to present it as a nice HTML page that could be printed out. The tool also sported a IronPython plugin that could run any snippet of python code that could provide a similar result.
+              </p>
+              <h3 class='project'>
+                SAP CRM Mobile Client 4.0 and 5.0 Installers
+                <br />
+                <small>InstallShield (MSI and InstallScript projects), C#/.NET</small>
+              </h3>
+              <p>
+                SAP CRM Mobile Client in 4.0 was based on VBA and the 5.0 version was based on .NET. As a part of the team we were maintaining the 4.0 install package as it was already under SP4 when I joined however the work on 5.0 package was just beginning. The 4.0 installer took about 13 hours to build and was diffcult to service upgrades. I had rearchitected the 5.0 setup to do the following.
+                <ul>
+                  <li>Modularize the packages to achieve better serviceability.</li>
+                  <li>Achieved over 60% reduction in size for frequently serviceable components like the client framework and controls.</li>
+                  <li>Reduced effective build time from 8 hours to 40 minutes by making the setup build process as a part of the component build.</li>
+                  <li>This enabled us to peform more Develop-Test-Fix cycles increasing the overall quality of the product</li>
+                  <li>Adopted a "Release early, Release often" approach to enable quicker bug fix cycles. Instead of performing all the quality validation using the QM team, basic smoke tests were done and the Installation package was released to the application developers for internal use.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class='row experience' id='slash'>
+            <h3 class='span6 org'>
+              <a href='http://www.slashsupport.com' target='_blank'>SlashSupport India Pvt Ltd</a>
+              <br />
+              A CSS Group Company
+            </h3>
+            <h3 class='span6 time'>
+              Team Lead
+              <br />
+              Jun 2003 to Oct 2004
+            </h3>
+            <div class='span12 details'>
+              <p>
+                I largely worked on InstallShield's setup packaging system. I gained significant insight into how Windows and MSI work. I contributed a lot to the WiX toolset community.
+              </p>
+              <ul>
+                <li>Attained authoritative knowledge on Windows Installer and Windows Installer API</li>
+                <li>Developed several Windows Installer extensions using C++, InstallScript, VBScript, and JScript</li>
+                <li>Attained a good knowledge of InstallShield Setup Project's architecture</li>
+                <li>Mentored new engineers on Windows Installer based products and the support process</li>
+                <li>Handled technical escalations from the India team</li>
+                <li>Pioneered Voice Support for InstallShield's EMEA Support</li>
+                <li>Performed Quality Reviews for measuring the Technical and Communication Skills of our peers</li>
+              </ul>
+            </div>
+          </div>
+          <div class='row experience' id='slash'>
+            <h3 class='span6 org' id='bajaj'>
+              <a href='http://www.bajajallianz.com' target='_blank'>Bajaj Allianz General Insurance Co Ltd</a>
+            </h3>
+            <h3 class='span6 time'>
+              IT Coordinator
+              <br />
+              Mar 2002 to Jun 2003
+            </h3>
+            <div class='span12 details'>
+              <p>
+                <li>Developed new modules in VB, ASP and MS Access to support in-house IT needs</li>
+                <li>Developed a module to automate the process of Endorsements using VB and ASP</li>
+                <li>Created CSV file parsers to read and populate the various "Registers" tables into the database using Java, JSP, JAXP, Struts</li>
+                <li>Created an Intranet Module to generate and maintain quotations for Householders Policy (An Insurance Product) using JSP/Struts</li>
+              </p>
+            </div>
+          </div>
+          <hr />
+          <h2 id='opensource'>
+            Open Source
+            <br />
+            <small>
+              <a href='http://github.com/vagmi'>Github Profile</a>
+            </small>
+          </h2>
+          <p>I have always been very passionate about open source software. My first PC was a 486 DX2 with 3.5" floppy drives. I ran Slackware on it which came with PC Quest magazine on 6 floppies. It was fun installing and nuking my hard disk in that process. Since then, I've been participating in the community and contributing what I can in terms of code, documentation, discussions, etc. Here are some of the projects that I am proud of.</p>
+          <h3>
+            <a href='https://github.com/dharanasoft/quartz-jruby'>quartz-jruby</a>
+          </h3>
+          <p>Quartz is an open source Java based scheduling framework. This project provides a JRuby wrapper over the cron API. The API is meant to be readable and really simple to create cron jobs in the java process space.</p>
+          <h3>
+            <a href='https://github.com/dharanasoft/haml-sprockets'>haml-sprockets</a>
+          </h3>
+          <p>
+            Rails 3.1 uses sprockets for its asset pipeline. Rails 3.1 has shown considerable love for SCSS and SASS but has left HAML out. We at Dharana Software Innovations are die hard HAML fans. We beleive that it is the best templating language around. So we would like to have it as a part of our client side toolkit as well. The haml-js project does exactly that. It was written for Node.js but works well with the browser too. This project helps us build JST templates with hamljs.
+          </p>
+          <h3>
+            <a href='https://github.com/dharanasoft/rtf-highlight'>RTFHighlight.vim</a>
+          </h3>
+          <p>
+            This plugin is used to syntax highlight pieces of code to RTF and it automatically copies it to the OSX clipboard. This will be very useful in putting code into keynote presentations.
+          </p>
+          <hr />
+          <h2 id='testimonials'>Testimonials</h2>
+          <h3>Ryan Schilling (A DharanaSoft Client) - CEO, GoNeighborly</h3>
+          <p>
+            This is my second startup and I've worked with no less than a half dozen development firms and probably two dozen engineers/designers.  You are by far the most well informed and talented hacker I've worked with.  I would say that it is not only your ability to code or speed or any of the normal measurements most developers get graded on that sets you apart.  Having lived in San Francisco and known startup founders and engineers, I see clearly that your talent is both being able to clearly understand the vision and build innovative solutions.  Most importantly you have a tremendous feel for product function/features.  I have not seen this in any of the people I've worked with.
+          </p>
+          <h3>Anand M S (While I was working at SAP Labs) - Senior Software Engineer</h3>
+          <p>
+            The first thing that amazed me about Vagmi was his ability to talk at length on any topic, especially technical, on the fly. The friendly, approachable nature makes it a pleasure interacting with this knowledge bank. I've seen him as a very diligent worker, keen on learning new things and more importantly sharing and applying them at work whenever possible. I'm sure he will be an invaluable resource in any organization or team.
+          </p>
+          <h3>Prabhu Subbaih (When I was working with SlashSupport) - Team Lead</h3>
+          <p>
+            Vagmi is a hard core technical person who knows in &amp; out of all the open source technologies. He has a passion to explore in depth in all the technology aspects, showed faster growth from an engineer to become a team lead in shorter period of time when I worked with him in Slashsupport.
+          </p>
+          <h3>Muraly Krish (When I was working with Bajaj Allianz) - Manager Operations</h3>
+          <p>
+            Vagmi - A gem who had too much knowledge and capability whom I could see growing in to more than where was then.
+          </p>
+          <p>
+            Ideally should move on to create / build his own creations with the kind of creative brain, energy and enterprenuership skills.
+          </p>
+          <hr />
+          <h2 id='education'>Education</h2>
+          <table class='table table-bordered table-striped'>
+            <tbody>
+              <tr>
+                <td>2002 - 2004</td>
+                <td>M.Sc. Information Technology</td>
+                <td>University of Madras</td>
+              </tr>
+              <tr>
+                <td>1998-2001</td>
+                <td>GNIIT</td>
+                <td>NIIT</td>
+              </tr>
+              <tr>
+                <td>1998 - 2001</td>
+                <td>B.Sc. Physics</td>
+                <td>D.G. Vaishnav College</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'></script>
+    <script src='/javascript/bootstrap.min.js' type='text/javascript'></script>
+    <script src='/javascript/raphael-min.js' type='text/javascript'></script>
+    <script src='/javascript/g.raphael-min.js' type='text/javascript'></script>
+    <script src='/javascript/date.js' type='text/javascript'></script>
+    <script src='/javascript/resume_timeline.js' type='text/javascript'></script>
+  </body>
+</html>

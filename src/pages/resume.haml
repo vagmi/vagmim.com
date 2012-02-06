@@ -1,0 +1,68 @@
+- @layout = 'resume'
+#print_button
+  .icon-print
+  %a#print(href="#" onclick="javascript:window.print();return false;") Print this page
+.container
+  .row
+    .span2.image
+      %img(src="/images/vagmi.jpg" width="100%")
+    .span6.header
+      %h1 
+        Vagmi Mudumbai
+        %br
+        %small Entrepreneur / Architect / Tech Blogger
+      %a.btn.small(href="http://linkedin.com/in/vagmi" target="_blank") LinkedIn
+      %a.btn(href="http://github.com/vagmi" target="_blank") Github
+    .span4
+      .well.contact
+        .icon-envelope(style="margin-top:3px")
+        %a(href="mailto:hireme@vagmim.com") hireme@vagmim.com
+        %br
+        .icon-volume-up(style="margin-top:3px")
+        %a(href="#") +91-9566099716
+  .row
+    .content.span12
+      %h2#objective Objective
+      .row
+        .obj.span7
+          %p To work for an organization that values the craft of software development and provides the right kind of environment and the freedom to build great software. I am very passionate about the open source and would like to join an organization that not only uses open source software but creates or contributes to the ecosystem.
+        .summary.span5
+          .well
+            %ul
+              %li 10 years of experience
+              %li Expertise in developing web apps
+              %li A very quick learner
+              %li Entrepreneurial Attitude
+      %hr
+      %h2#skills Skills
+      %ul.skills
+        %li Ruby
+        %li Rails
+        %li Sinatra
+        %li HTML5
+        %li CSS3
+        %li Javascript
+        %li Coffeescript
+        %li JQuery
+        %li Backbone.js
+        %li PostgreSQL
+        %li MySQL
+        %li MongoDB
+        %li Cucumber
+        %li Java
+        %li C#
+      %hr
+      %h2 Experience
+      .row
+        #experience_container
+          #experience_timeline.span12
+      .row.experience#dharana= partial('dharana')
+      .row.experience#sap= partial('sap')
+      .row.experience#slash= partial('slash')
+      .row.experience#slash= partial('bajaj')
+      %hr
+      = partial('opensource')
+      %hr
+      =partial('testimonials')
+      %hr
+      = partial('education')

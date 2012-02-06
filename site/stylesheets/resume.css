@@ -1,0 +1,124 @@
+/* line 1 */
+body {
+  font-family: "Signika Negative", "Ubuntu", sans-serif;
+  font-weight: 300;
+  background-color: white;
+  background-image: url(/images/snow.png);
+}
+
+/* line 7 */
+#print_button {
+  z-index: 999;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 4px;
+  border-left: 1px solid #777777;
+  border-bottom: 1px solid #777777;
+  background-color: #dddddd;
+}
+/* line 16 */
+#print_button .icon-print {
+  margin-top: 4px;
+}
+/* line 18 */
+#print_button a {
+  text-decoration: none;
+  color: #333333;
+}
+
+@media print {
+  /* line 23 */
+  #print_button {
+    display: none;
+  }
+}
+/* line 27 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Corben", "Georgia", serif;
+  font-weight: 400;
+}
+
+/* line 32 */
+.contact a {
+  text-decoration: none;
+}
+
+/* line 34 */
+.btn {
+  text-decoration: none;
+}
+
+/* line 37 */
+.content h3, .content h4, .content h5, .content h6 {
+  font-family: "Josefin Sans", "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+/* line 40 */
+.content .experience {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 43 */
+.content .experience .time {
+  text-align: right;
+}
+/* line 45 */
+.content h3.project {
+  font-family: "Helvetica Neue";
+}
+/* line 47 */
+.content h3.project small {
+  font-size: 1em;
+  color: #555555;
+}
+/* line 51 */
+.content h3 a {
+  color: #555555;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 55 */
+.content p, .content li {
+  font-family: "Signika Negative", "Ubuntu", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  color: #555555;
+}
+/* line 61 */
+.content ul.skills li {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid #777777;
+  padding: 3px 5px;
+  background-color: #dddddd;
+}
+
+/* line 67 */
+#experience_container {
+  width: 100%;
+}
+/* line 69 */
+#experience_container h2.exp {
+  position: fixed;
+  left: 0;
+  top: 20;
+}
+/* line 73 */
+#experience_container #experience_timeline {
+  width: 705px;
+  float: none;
+  margin: 0px auto;
+  height: 60px;
+}
+
+/* line 78 */
+.efixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  background-image: url(/images/snow.png);
+  opacity: 0.9;
+  border-bottom: 1px solid #cccccc;
+}

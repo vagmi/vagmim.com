@@ -1,0 +1,51 @@
+%h3.span6.org
+  %a(href="http://www.sap.com/india/about/company/saplabs/index.epx" target="_blank") SAP Labs India
+%h3.span6.time
+  Associate Architect
+  %br
+  Oct 2004 to Mar 2009
+.span12.details
+  %p
+    Over the course of my career at SAP Research and Development Labs, I had worked on a wide variety of technologies starting with InstallShield, C#/.NET, Java, HTML5 and Adobe Flex/ActionScript. Here is a summary of my accomplishments at SAP.
+  %h3.project
+    AUI Framework
+    %br
+    %small Adobe Flex/ActionScript
+  %p 
+    I was leading a team of developers. As a part of the business user tools initiative under SAP, we were commisioned to build a UI framework that could be used to build various business reports and analytics widgets on top of the Flex framework. We build the framework initially based on the open source
+    %a(href="http://sourceforge.net/adobe/cairngorm/wiki/About/") Cairngorm 2 framework.
+    However we found that for large applications the size of the SWF was huge and the build times were quite large. We then evaluated the Polestar framework built by the Business Objects team and modified it to suit our requirements. The Polestar project implemented the Eclipse's platform and runtime libraries in Flex. I forked the project and added the ability to discover plugins and load plugins based on extension points and extensions. I also built a client side context framework that extended the AS3 Binding across different plugins (SWFs).
+
+  %h3.project
+    NWDI Client for .Net
+    %br
+    %small C# / .NET v2.0
+  %p
+    I led the team in building a .NET client for the Netweaver Development Infrastructure. I interfaced with the web services provided by the service side components like SLD, CBS and the DTR. I also built a .NET wrapper around the DTR library that was later integrated with Visual Studio's IVsHierarchy to provide checkin, checkout, display and other source control integration facilities.
+  
+  %h3.project
+    C# for Eclipse
+    %br
+    %small C#, MDBG, Java, Eclipse PDT
+  %p
+    We demonstrated this as a proof of concept. We integrated the C# editor, the msbuild project model and the Antechinus C# editor with the existing SAP NWDS (Netweaver Developer Studio) to show that we could build .NET projects and more specifically the Ocassionally Connected Apps (OCA.NET) projects right inside NWDS that could leverage all the facilities provided by existing eclipse plugins provided by NWDS for integrating to NWDI and other SAP specific plugins. We achieved the complete functionality of setting breakpoints, inspecting locals and evaluating watch expressions using the Eclipse's default debug perspective.
+
+  %h3.project
+    SAP Environment Checker
+    %br
+    %small C# / .NET 2.0, IronPython and loads of XML processing
+  %p
+    I had written SAP Environment Checker to help me analyze the health of a system by detective certain aspects like presence of DLLs in the right place, presence of registry entries, an ability to connect with the database and check the version of the client database and so on. I had built it in such a manner that the tool itself was really small. If an assembly placed in the same directory as the tool and it exposed classes conforming to an interface and is marked XMLSerializable, it would be dynamically loaded and any corresponding entries in the ".env" file could be processed. The results were tabulated using XSLT to present it as a nice HTML page that could be printed out. The tool also sported a IronPython plugin that could run any snippet of python code that could provide a similar result.
+
+  %h3.project
+    SAP CRM Mobile Client 4.0 and 5.0 Installers
+    %br
+    %small InstallShield (MSI and InstallScript projects), C#/.NET
+  %p
+    SAP CRM Mobile Client in 4.0 was based on VBA and the 5.0 version was based on .NET. As a part of the team we were maintaining the 4.0 install package as it was already under SP4 when I joined however the work on 5.0 package was just beginning. The 4.0 installer took about 13 hours to build and was diffcult to service upgrades. I had rearchitected the 5.0 setup to do the following.
+    %ul
+      %li Modularize the packages to achieve better serviceability.
+      %li Achieved over 60% reduction in size for frequently serviceable components like the client framework and controls.
+      %li Reduced effective build time from 8 hours to 40 minutes by making the setup build process as a part of the component build.
+      %li This enabled us to peform more Develop-Test-Fix cycles increasing the overall quality of the product
+      %li Adopted a "Release early, Release often" approach to enable quicker bug fix cycles. Instead of performing all the quality validation using the QM team, basic smoke tests were done and the Installation package was released to the application developers for internal use.
